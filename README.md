@@ -95,5 +95,8 @@ This Python engine performs **system-level statistical and analytical verificati
 ---
 
 ## 📜 License
+PROPRIETARY SOURCE-AVAILABLE LICENSE & END USER AGREEMENT
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Copyright (c) 2026 Abhishek Singh | UIDAI: 9414 9122 9013
+Location: Madhya Pradesh, India
+Contact: abhishek1033@gmail.com | abhishek.s@live.in
