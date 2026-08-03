@@ -6,9 +6,6 @@
 ![CO2 Reduction](https://img.shields.io/badge/CO%E2%82%82_Reduction-2E7D32?style=for-the-badge&logo=leaf&logoColor=white)
 ![Electrochemistry](https://img.shields.io/badge/Electrochemistry-00A86B?style=for-the-badge&logo=flask&logoColor=white)
 ![CAD Design](https://img.shields.io/badge/CAD_Design-E53E3E?style=for-the-badge&logo=autodesk&logoColor=white)
-![CFD Simulation](https://img.shields.io/badge/CFD_Simulation-0072C6?style=for-the-badge&logo=ansys&logoColor=white)
-![FEA Analysis](https://img.shields.io/badge/FEA_Analysis-805AD5?style=for-the-badge&logo=dassaultsystemes&logoColor=white)
-![Locomotive](https://img.shields.io/badge/Locomotive-2D3748?style=for-the-badge&logo=train&logoColor=white)
 ---
 ## 📌 Project Overview
 
