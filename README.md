@@ -1,6 +1,6 @@
 # MAES-Marine Stack: CAD Design, Tolerance Analysis & Dynamic Sealing Verification
-
-![Status](https://img.shields.io/badge/Status-Research_POC-orange) ![Type](https://img.shields.io/badge/Type-Simulation_Model-blue)
+---
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21778959.svg)](https://doi.org/10.5281/zenodo.21778959) ![Status](https://img.shields.io/badge/Status-Research_POC-orange) ![Type](https://img.shields.io/badge/Type-Simulation_Model-blue)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Powered by Gemini](https://img.shields.io/badge/Powered%20by-Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://gemini.google.com)
 ![CO2 Reduction](https://img.shields.io/badge/CO%E2%82%82_Reduction-2E7D32?style=for-the-badge&logo=leaf&logoColor=white)
