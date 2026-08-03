@@ -1,8 +1,15 @@
 # MAES-Marine Stack: CAD Design, Tolerance Analysis & Dynamic Sealing Verification
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Status](https://img.shields.io/badge/Status-Research_POC-orange) ![Type](https://img.shields.io/badge/Type-Simulation_Model-blue)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-
+[![Powered by Gemini](https://img.shields.io/badge/Powered%20by-Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://gemini.google.com)
+![CO2 Reduction](https://img.shields.io/badge/CO%E2%82%82_Reduction-2E7D32?style=for-the-badge&logo=leaf&logoColor=white)
+![Electrochemistry](https://img.shields.io/badge/Electrochemistry-00A86B?style=for-the-badge&logo=flask&logoColor=white)
+![CAD Design](https://img.shields.io/badge/CAD_Design-E53E3E?style=for-the-badge&logo=autodesk&logoColor=white)
+![CFD Simulation](https://img.shields.io/badge/CFD_Simulation-0072C6?style=for-the-badge&logo=ansys&logoColor=white)
+![FEA Analysis](https://img.shields.io/badge/FEA_Analysis-805AD5?style=for-the-badge&logo=dassaultsystemes&logoColor=white)
+![Locomotive](https://img.shields.io/badge/Locomotive-2D3748?style=for-the-badge&logo=train&logoColor=white)
+---
 ## 📌 Project Overview
 
 The **MAES-Marine Stack** repository provides an open-source engineering framework for designing, sizing, and validating marine-grade hydrogen fuel cell / electrolyzer stack assemblies operating under dynamic sea-state conditions.
