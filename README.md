@@ -74,7 +74,7 @@ A 10,000-run Monte Carlo simulation yielded the following manufacturing pass rat
 
 ```bash
 # Clone repository
-git clone [https://github.com/your-username/MAES-Marine-Stack-CAD-Sim.git](https://github.com/your-username/MAES-Marine-Stack-CAD-Sim.git)
+git clone [https://github.com//Abhishek1033ubuntu/MAES-Marine-Stack-CAD-Sim.git](https://github.com//Abhishek1033ubuntu/MAES-Marine-Stack-CAD-Sim.git)
 cd MAES-Marine-Stack-CAD-Sim/sim
 
 # Install dependencies
