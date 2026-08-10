@@ -1,5 +1,6 @@
 # MAES-Marine Stack: CAD Design, Tolerance Analysis & Dynamic Sealing Verification
 ---
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21778959.svg)](https://doi.org/10.5281/zenodo.21778959) ![Status](https://img.shields.io/badge/Status-Research_POC-orange) ![Type](https://img.shields.io/badge/Type-Simulation_Model-blue)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Powered by Gemini](https://img.shields.io/badge/Powered%20by-Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://gemini.google.com)
@@ -7,6 +8,7 @@
 ![Electrochemistry](https://img.shields.io/badge/Electrochemistry-00A86B?style=for-the-badge&logo=flask&logoColor=white)
 ![CAD Design](https://img.shields.io/badge/CAD_Design-E53E3E?style=for-the-badge&logo=autodesk&logoColor=white)
 ---
+
 ## 📌 Project Overview
 
 The **MAES-Marine Stack** repository provides an open-source engineering framework for designing, sizing, and validating marine-grade hydrogen fuel cell / electrolyzer stack assemblies operating under dynamic sea-state conditions.
