@@ -1,5 +1,6 @@
 # MAES-Marine Stack: CAD Design, Tolerance Analysis & Dynamic Sealing Verification
 
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21778959.svg)](https://doi.org/10.5281/zenodo.21778959) 
 ![Status](https://img.shields.io/badge/Status-Research_POC-orange) ![Type](https://img.shields.io/badge/Type-Simulation_Model-blue)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -107,3 +108,5 @@ PROPRIETARY SOURCE-AVAILABLE LICENSE & END USER AGREEMENT
 Copyright (c) 2026 Abhishek Singh | UIDAI: 9414 9122 9013
 Location: Madhya Pradesh, India
 Contact: abhishek1033@gmail.com | abhishek.s@live.in
+
+Note on References & IP: Detailed citations and literature references are restricted to protect Intellectual Property. See References.md for details or to request access.
