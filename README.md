@@ -1,6 +1,5 @@
 # MAES-Marine Stack: CAD Design, Tolerance Analysis & Dynamic Sealing Verification
 
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21778959.svg)](https://doi.org/10.5281/zenodo.21778959) 
 ![Status](https://img.shields.io/badge/Status-Research_POC-orange) ![Type](https://img.shields.io/badge/Type-Simulation_Model-blue)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -13,17 +12,16 @@
 
 ## 📌 Project Overview
 
-The **MAES-Marine Stack** repository provides an open-source engineering framework for designing, sizing, and validating marine-grade hydrogen fuel cell / electrolyzer stack assemblies operating under dynamic sea-state conditions.
+The **MAES-Marine** repository provides an open-source engineering framework for designing, modeling, and validating marine-grade electrochemical $CO_2$ reduction reaction ($CO_2RR$) electrolyzer stack assemblies[cite: 1]. The system directly converts captured main engine flue gas into value-added chemical feedstocks—specifically e-methanol ($CH_3OH$) and polymer-grade ethylene ($C_2H_4$)—powered by shipboard auxiliary generation[cite: 1].
 
 This project integrates 3D CAD modeling, statistical tolerance budgeting (**ISO 2768**), and a Monte Carlo simulation engine to verify system performance under dynamic vessel pitch and roll motion ($0^\circ - 25^\circ$).
 
 ---
-
 ## 🏗️ System Architecture & Engineering Scope
 
-```
+```text
 +---------------------------------------------------------------------------------+
-|                            MAES-MARINE STACK SCOPE                              |
+|                         MAES-MARINE STACK SCOPE                                 |
 +---------------------------------------------------------------------------------+
 |  1. CAD DESIGN & HARDWARE (cad/)                                                |
 |     - Bipolar Flow Plates (1.00 mm channel depth nominal)                       |
@@ -32,26 +30,24 @@ This project integrates 3D CAD modeling, statistical tolerance budgeting (**ISO 
 |                                                                                 |
 |  2. SYSTEM SIMULATION ENGINE (sim/)                                             |
 |     - 10,000-Run Monte Carlo Tolerance Analysis                                 |
-|     - Channel Pressure Drop ($\Delta P$) & Faradaic Efficiency Modeling         |
-|     - Dynamic Sea-State Pitch/Roll ($0^\circ - 25^\circ$) Gasket Strain Bounds  |
+|     - Channel Pressure Drop (ΔP) & Faradaic Efficiency Modeling                 |
+|     - Dynamic Sea-State Pitch/Roll (0° - 25°) Gasket Strain Bounds              |
 +---------------------------------------------------------------------------------+
-```
-
 ---
 
 ## 📐 Mathematical Methodology
 
 ### 1. Channel Pressure Drop ($\Delta P$) Sensitivity
-Flow channel pressure drop scales dynamically with channel depth tolerance ($t_{\text{dc}}$) and width tolerance ($t_{\text{wc}}$):
+Flow channel pressure drop scales dynamically with actual channel depth ($d = d_{\text{nom}} \pm t_{\text{dc}}$) and width ($w = w_{\text{nom}} \pm t_{\text{wc}}$):
 
-$$\Delta P = \Delta P_{\text{nom}} \times \left(\frac{d_{\text{nom}}}{t_{\text{dc}}}\right)^3 \times \left(\frac{w_{\text{nom}}}{t_{\text{wc}}}\right)$$
+$$\Delta P = \Delta P_{\text{nom}} \times \left(\frac{d_{\text{nom}}}{d}\right)^3 \times \left(\frac{w_{\text{nom}}}{w}\right)$$
 
 ### 2. Flow Uniformity & Faradaic Efficiency ($\text{FE}$)
-Flow distribution uniformity ($\Phi$) is coupled to Gas Diffusion Layer (GDL) compressed thickness ($t_{\text{gdl}}$):
+Flow distribution uniformity ($\Phi$) is coupled to Gas Diffusion Layer (GDL) compressed thickness ($t_{\text{gdl}}$) and channel depth ratio:
 
-$$\Phi = \left(\frac{t_{\text{dc}}}{d_{\text{nom}}}\right)^2 \times \left(\frac{t_{\text{gdl}}}{t_{\text{gdl,nom}}}\right)$$
+$$\Phi = \left(\frac{d}{d_{\text{nom}}}\right)^2 \times \left(\frac{t_{\text{gdl}}}{t_{\text{gdl,nom}}}\right)$$
 
-$$\text{FE} = 91.8 - 12.0 \times \max\left(0, 1.0 - \Phi\right)^{1.5}$$
+$$\text{FE} = 91.8 - 12.0 \times \max\left(0, 1.0 - \Phi\right)^{1.5} \quad [\%]$$
 
 ### 3. Dynamic Marine Sealing Integrity
 Dynamic clamping stress ($\sigma_{\text{clamp}}$) and gasket strain ($\varepsilon_{\text{gasket}}$) vary with vessel pitch angle ($\theta_{\text{pitch}}$) under dynamic sea-state loads ($1.0\text{g} - 2.5\text{g}$):
@@ -74,7 +70,7 @@ A 10,000-run Monte Carlo simulation yielded the following manufacturing pass rat
 
 ### Key Conclusions
 1. **Manufacturing Tolerance:** **ISO 2768-m ($\pm 0.020\text{ mm}$)** is selected as the production standard. It achieves a **100% manufacturing pass rate**, rendering high-cost fine precision machining (ISO 2768-f) unnecessary.
-2. **Sealing Integrity:** Gasket strain stays smoothly within the target **$20\% - 35\%$ safe sealing zone** across all marine pitch angles ($0^\circ - 25^\circ$).
+2. **Sealing Integrity:** Gasket strain stays smoothly within the target **$20\% - 30\%$ safe sealing zone** across all marine pitch angles ($0^\circ - 25^\circ$).
 
 ---
 
@@ -82,7 +78,7 @@ A 10,000-run Monte Carlo simulation yielded the following manufacturing pass rat
 
 ```bash
 # Clone repository
-git clone [https://github.com//Abhishek1033ubuntu/MAES-Marine-Stack-CAD-Sim.git](https://github.com//Abhishek1033ubuntu/MAES-Marine-Stack-CAD-Sim.git)
+git clone [https://github.com/Abhishek1033ubuntu/MAES-Marine-Stack-CAD-Sim.git](https://github.com/Abhishek1033ubuntu/MAES-Marine-Stack-CAD-Sim.git)
 cd MAES-Marine-Stack-CAD-Sim/sim
 
 # Install dependencies
@@ -90,16 +86,8 @@ pip install -r requirements.txt
 
 # Run simulation script
 python maes_simulation.py
+⚠️ Verification Disclaimer & Next StepsThis Python engine performs system-level statistical and analytical verification. For final physical hardware manufacturing sign-off:Non-linear spatial continuum FEA (e.g., via FreeCAD/CalculiX, ANSYS, or Abaqus) is recommended to evaluate localized stress concentrations at plate corners.Gasket materials should meet EPDM / FKM (60–70 Shore A) specifications.
 ```
-
----
-
-## ⚠️ Verification Disclaimer & Next Steps
-
-This Python engine performs **system-level statistical and analytical verification**. For final physical hardware manufacturing sign-off:
-* Non-linear spatial continuum FEA (e.g., via FreeCAD/CalculiX, ANSYS, or Abaqus) is recommended to evaluate localized stress concentrations at plate corners.
-* Gasket materials should meet **EPDM / FKM (60–70 Shore A)** specifications.
-
 ---
 
 ## 📜 License
