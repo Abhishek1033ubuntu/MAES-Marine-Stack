@@ -34,7 +34,7 @@ This project integrates 3D CAD modeling, statistical tolerance budgeting (**ISO 
 |     - Dynamic Sea-State Pitch/Roll (0° - 25°) Gasket Strain Bounds              |
 +---------------------------------------------------------------------------------+
 ---
-
+```
 ## 📐 Mathematical Methodology
 
 ### 1. Channel Pressure Drop ($\Delta P$) Sensitivity
